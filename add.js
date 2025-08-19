@@ -21,4 +21,14 @@ orange.addEventListener("click",o);
 function o(){
     document.body.style.backgroundColor="orange"
 }
-// const o=()=>document.body.style.backgroundColor="orange"
+// const o=()=>document.body.style.backgroundColor="orange";
+
+const button=document.getElementById("btn");
+button.addEventListener("click",()=>
+    {
+    console.log("click");
+    const inputType=document.getElementById("nam");
+    const name=inputType.value;
+    const paragraph=document.getElementById("para");
+    paragraph.innerText=name;
+})
