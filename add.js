@@ -31,4 +31,20 @@ button.addEventListener("click",()=>
     const name=inputType.value;
     const paragraph=document.getElementById("para");
     paragraph.innerText=name;
+    inputType.value="";
 })
+
+const button2=document.getElementById("btn2");
+button2.addEventListener("click",function(){
+
+    const message=document.getElementById("comment");
+    const msg=message.value;
+
+    const para2=document.getElementById("paragraph");
+    const newPara=document.createElement("p");
+    newPara.classList.add("style")
+    newPara.innerText=msg;
+    para2.append(newPara);
+    message.value="";
+})
+ 
