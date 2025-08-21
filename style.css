@@ -16,7 +16,7 @@
 }
 .form{
     margin-top: 50px;
-    display: flex;
+    /* display: flex; */
     background:linear-gradient(to right,rgb(131, 10, 131),rgb(69, 22, 14));
     color: aliceblue;
     padding: 10px;
@@ -34,4 +34,30 @@ fieldset{
     padding: 10px;
     border-radius: 20px;
 
+}
+#sec{
+    border: 2px solid black;
+}
+#sec div{
+    border: 2px solid black;
+}
+ ol{
+    border: 2px solid black;
+}
+li{
+    border: 2px solid black;
+}
+
+
+@media screen and (max-width:760px ){
+    .addEvent{
+        display: grid;
+    grid-template-columns: auto;
+    }
+    .form{
+        width: 90%;
+    }
+    textarea{
+        width: 100%;
+    }
 }
