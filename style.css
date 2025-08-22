@@ -49,6 +49,31 @@ li{
 }
 
 
+#sec2{
+     margin: 30px auto;
+     width: 40%;
+     text-align: center;
+     color: antiquewhite;
+    
+     
+}
+
+.divi2{
+    background:linear-gradient(to right,rgb(83, 83, 159),rgb(114, 10, 114),rgb(199, 42, 42));
+     padding: 20px;
+}
+label,.divi2 input[type="email"],input[type="password"]{
+    margin: 10px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 50px;
+}
+#btn3{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px 0px 20px 0px;
+
+}
 @media screen and (max-width:760px ){
     .addEvent{
         display: grid;
@@ -58,6 +83,9 @@ li{
         width: 90%;
     }
     textarea{
+        width: 100%;
+    }
+    #sec2{
         width: 100%;
     }
 }

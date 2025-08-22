@@ -26,7 +26,7 @@ function o(){
 const button=document.getElementById("btn");
 button.addEventListener("click",()=>
     {
-    console.log("click");
+    // console.log("click");
     const inputType=document.getElementById("nam");
     const name=inputType.value;
     const paragraph=document.getElementById("para");
@@ -46,5 +46,24 @@ button2.addEventListener("click",function(){
     newPara.innerText=msg;
     para2.append(newPara);
     message.value="";
+})
+
+const message=document.getElementById("comment");
+message.addEventListener("keyup",(event)=>{
+console.log(event.target.value);
+
+}
+)
+
+const email=document.getElementById("email");
+email.addEventListener("keyup",(event)=>{
+console.log(event.target.value);
+const button3=document.getElementById("btn3");
+if(event.target.value.endsWith("@gmail.com")){
+    button3.removeAttribute("disabled")
+}
+else{
+button3.setAttribute("disabled",true)
+}
 })
  
